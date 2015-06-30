@@ -1,0 +1,60 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "bundle/VimExplorer"]
+	path = bundle/VimExplorer
+	url = https://github.com/mbbill/VimExplorer.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = http://github.com/tpope/vim-repeat.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "bundle/lang-css-less"]
+	path = bundle/lang-css-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/lang-jade"]
+	path = bundle/lang-jade
+	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "bundle/lang-coffeescript"]
+	path = bundle/lang-coffeescript
+	url = https://github.com/vim-scripts/vim-coffee-script.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/lang-ruby"]
+	path = bundle/lang-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/vim-simple-todo"]
+	path = bundle/vim-simple-todo
+	url = https://github.com/dpecos/vim-simple-todo.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/powerline"]
+	path = bundle/powerline
+	url = git://github.com/Lokaltog/powerline.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki
+[submodule "bundle/greplace"]
+	path = bundle/greplace
+	url = https://github.com/vim-scripts/greplace.vim.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/vundle"]
+	path = bundle/vundle
+	url = https://github.com/gmarik/vundle
