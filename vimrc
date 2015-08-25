@@ -26,7 +26,7 @@ set dir=/tmp
 
 set clipboard+=unnamed " Yanks go on clipboard instead.
 
-:let mapleader = ","
+let mapleader = ","
 
 " Paste mode toggle
 nmap <silent> <leader>p :set paste!<CR>
@@ -86,7 +86,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 " lean & mean status/tabline for vim that's light as air
 Plugin 'bling/vim-airline'
 " Git wrapper
@@ -159,6 +159,12 @@ Plugin 'groenewege/vim-less'
 Plugin 'airblade/vim-gitgutter'
 " Precision colors for machines and people 
 Plugin 'altercation/vim-colors-solarized'
+" Syntax highlighting, matching rules and mappings for the original Markdown and extensions.
+Plugin 'plasticboy/vim-markdown'
+" r visually displaying indent levels
+Plugin 'nathanaelkane/vim-indent-guides'
+" instantly preview finnicky markdown files
+Plugin 'suan/vim-instant-markdown'
 
 call vundle#end()
 
