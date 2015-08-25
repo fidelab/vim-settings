@@ -57,4 +57,7 @@
 
   // Enforce placing 'use strict' at the top function scope
   "strict": true
+
+  // This option tells JSHint that your code uses ECMAScript 6 specific syntax.
+  "esnext": true
 }
