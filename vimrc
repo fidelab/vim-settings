@@ -113,6 +113,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'lukaszkorecki/CoffeeTags'
 
 Bundle 'scrooloose/syntastic'
+Bundle 'Shutnik/jshint2.vim'
 Bundle 'othree/html5.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
