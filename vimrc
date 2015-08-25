@@ -79,48 +79,88 @@ syntax on
 call pathogen#infect()
 
 " ===== vundle =====
-filetype off 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set nocompatible
+filetype off
 
-Bundle 'gmarik/vundle'
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'ervandew/supertab'
-Bundle 'mbbill/VimExplorer'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/greplace.vim'
+Plugin 'gmarik/vundle'
+" lean & mean status/tabline for vim that's light as air
+Plugin 'bling/vim-airline'
+" Git wrapper
+Plugin 'tpope/vim-fugitive'
+" explore your filesystem and to open files and directories.
+Plugin 'scrooloose/nerdtree'
+" NERDTree and tabs together in Vim, painlessly
+Plugin 'jistr/vim-nerdtree-tabs'
+"  is a fast, as-you-type, fuzzy-search code completion engine 
+Plugin 'Valloric/YouCompleteMe'
+" Perform all your vim insert mode completions with Tab
+"Plugin 'ervandew/supertab'
+" the File Manager within Vim!
+Plugin 'mbbill/VimExplorer'
+" uzzy file, buffer, mru, tag, etc finder.
+Plugin 'kien/ctrlp.vim'
+" Replace a pattern across multiple files interactively
+Plugin 'vim-scripts/greplace.vim'
+" Vim plugin for intensely orgasmic commenting
+Plugin 'scrooloose/nerdcommenter'
+" enable repeating supported plugin maps with '.'
+Plugin 'tpope/vim-repeat'
+" quoting/parenthesizing made simple
+Plugin 'tpope/vim-surround'
+" Vim script for text filtering and alignment
+Plugin 'godlygeek/tabular'
+" True Sublime Text style multiple selections for Vim
+Plugin 'terryma/vim-multiple-cursors'
+" Vim plugin for the Perl module / CLI script 'ack'
+Plugin 'mileszs/ack.vim'
+" NERDtree + ack.vim
+Plugin 'tyok/nerdtree-ack'
+" Vim motions on speed! 
+Plugin 'Lokaltog/vim-easymotion'
+" A parser for a condensed HTML format
+Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
+" provides insert mode auto-completion for quotes, parens, brackets, etc.
+Plugin 'Raimondi/delimitMate'
+" interpret a file by function and cache file automatically
+Plugin 'MarcWeber/vim-addon-mw-utils'
+" Some utility functions for VIM (another plugin requires)
+Plugin 'tomtom/tlib_vim'
+"  implements some of TextMate's snippets features in Vim
+Plugin 'garbas/vim-snipmate'
+" vim-snipmate default snippets
+Plugin 'honza/vim-snippets'
+" displays tags in a window, ordered by scope
+Plugin 'majutsushi/tagbar'
+" Ctags-like tag generator for CoffeeScript
+Plugin 'lukaszkorecki/CoffeeTags'
+" Syntax checking hacks for vim
+Plugin 'scrooloose/syntastic'
+" Lightweight, customizable and functional Vim plugin for JSHint integration.
+Plugin 'Shutnik/jshint2.vim'
+" HTML5 omnicomplete and syntax
+Plugin 'othree/html5.vim'
+" Vim/Ruby Configuration Files
+Plugin 'vim-ruby/vim-ruby'
+" Ruby on Rails power tools 
+Plugin 'tpope/vim-rails'
+" Vastly improved Javascript indentation and syntax support in Vim. 
+Plugin 'pangloss/vim-javascript'
+" CoffeeScript support for vim
+Plugin 'kchmck/vim-coffee-script'
+" Vim Jade template engine syntax highlighting and indention
+Plugin 'digitaltoad/vim-jade'
+" vim syntax for LESS (dynamic CSS)
+Plugin 'groenewege/vim-less'
+" shows a git diff in the gutter (sign column) and stages/reverts hunks.
+Plugin 'airblade/vim-gitgutter'
+" Precision colors for machines and people 
+Plugin 'altercation/vim-colors-solarized'
 
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'godlygeek/tabular'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'mileszs/ack.vim'
-Bundle 'tyok/nerdtree-ack'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim'}
-Bundle 'Raimondi/delimitMate'
-
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'majutsushi/tagbar'
-Bundle 'lukaszkorecki/CoffeeTags'
-
-Bundle 'scrooloose/syntastic'
-Bundle 'Shutnik/jshint2.vim'
-Bundle 'othree/html5.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'groenewege/vim-less'
+call vundle#end()
 
 filetype plugin indent on
 
@@ -216,6 +256,16 @@ autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 let g:syntastic_enable_signs=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 let g:syntastic_javascript_jshint_args = "--config ~/.vim/syntax/jshintrc"
 let g:syntastic_coffee_coffeelint_args = "--csv --file ~/.vim/syntax/coffeelint.json"
 
@@ -250,3 +300,8 @@ let NERDTreeShowHidden=1
 
 " ==== JSHint ===== "
 set runtimepath+=~/.vim/bundle/jshint2.vim/
+
+" ==== solarized ===== "
+syntax enable
+set background=dark
+colorscheme solarized

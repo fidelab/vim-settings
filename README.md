@@ -21,3 +21,4 @@ Clone submodule repositories
 And inside vi
     :BundleInstall
 
+:PluginInstall!
