@@ -26,6 +26,14 @@
     > cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
     > make ycm_support_libs
 
+**4.** All done!
+
+#### Instant Markdown
+
+1. `npm -g install instant-markdown-d`
+
+2. Ensure you have the line `filetype plugin on` in your `.vimrc`
+
 ## Updating plugins
 
 Inside VIM:
@@ -38,7 +46,7 @@ In vimrc, insert plugin line like `Plugin github/route`
 
 Inside VIM: 
 
-`:source %` and then `:PluginInstall!`
+`:source %` and then `:PluginInstall`
 
 ## Plugins List
 
