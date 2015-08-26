@@ -96,9 +96,9 @@ Plugin 'scrooloose/nerdtree'
 " NERDTree and tabs together in Vim, painlessly
 Plugin 'jistr/vim-nerdtree-tabs'
 "  is a fast, as-you-type, fuzzy-search code completion engine 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 " Perform all your vim insert mode completions with Tab
-"Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 " the File Manager within Vim!
 Plugin 'mbbill/VimExplorer'
 " uzzy file, buffer, mru, tag, etc finder.

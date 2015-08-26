@@ -12,7 +12,8 @@
 
 ## Dependencies
 
-#### youAutocompleteMe 
+#### youAutocompleteMe (not used by default) 
+_if you want to use it, uncomment line `Plugin 'Valloric/YouCompleteMe` on `vimrc` and comment line `Plugin 'ervandew/supertab'`_
 
 **1.** Ensure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting.
 
