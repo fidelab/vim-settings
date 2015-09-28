@@ -314,3 +314,6 @@ set runtimepath+=~/.vim/bundle/jshint2.vim/
 syntax enable
 set background=dark
 colorscheme solarized
+
+" ==== hide node_modules ctrlp ===
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
