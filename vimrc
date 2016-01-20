@@ -165,6 +165,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
 " instantly preview finnicky markdown files
 Plugin 'suan/vim-instant-markdown'
+"Provides database access to many DBMS (Oracle, Sybase, Microsoft, MySQL, DBI,..)"
+Plugin 'dbext.vim'
 
 call vundle#end()
 
