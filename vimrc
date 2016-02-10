@@ -276,6 +276,9 @@ let g:syntastic_warning_symbol='⚠'
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
+"let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+let g:syntastic_javascript_checkers = ['jshint']
+
 let g:syntastic_javascript_jshint_args = "--config ~/.vim/syntax/jshintrc"
 let g:syntastic_coffee_coffeelint_args = "--csv --file ~/.vim/syntax/coffeelint.json"
 
