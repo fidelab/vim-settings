@@ -167,6 +167,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'suan/vim-instant-markdown'
 "Provides database access to many DBMS (Oracle, Sybase, Microsoft, MySQL, DBI,..)"
 Plugin 'dbext.vim'
+"Format code with one button press! This plugin makes use of external formatprograms to achieve the best results"
+Plugin 'Chiel92/vim-autoformat'
 
 call vundle#end()
 
