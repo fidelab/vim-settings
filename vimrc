@@ -321,3 +321,20 @@ colorscheme solarized
 
 " ==== hide node_modules ctrlp ===
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" ==== JSCS ===== 
+function! JscsFix()
+  "Save current cursor position"
+  let l:winview = winsaveview()
+  "Pipe the current buffer (%) through the jscs -x command"
+  % ! jscs -x
+  "Restore cursor position - this is needed as piping the file"
+  "through jscs jumps the cursor to the top"
+  call winrestview(l:winview)
+endfunction
+
+command! JscsFix :call JscsFix()
+
+" ==== VIM AUTOFORMAT ====
+noremap <F5> :Autoformat<CR>
+
