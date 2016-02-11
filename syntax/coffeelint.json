@@ -87,7 +87,7 @@
     },
     "empty_constructor_needs_parens": {
         "name": "empty_constructor_needs_parens",
-        "level": "ignore"
+        "level": "warn"
     },
     "cyclomatic_complexity": {
         "name": "cyclomatic_complexity",
