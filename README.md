@@ -2,7 +2,7 @@
 
 **1.** Clone repository on ~/.vim
 
-`git clone https://github.com/fidelab/vim-settings.git`
+`git clone https://github.com/fidelab/vim-settings.git ~/.vim`
 
 **2.** Set up Vundle
 
@@ -55,15 +55,15 @@ _if you want to use it, uncomment line `Plugin 'Valloric/YouCompleteMe` on `vimr
 
 Inside VIM:
 
-`:source %` and then `:PluginUpdate` or `:PluginInstall!`
+`:so ~/.vim/vimrc` and then `:PluginUpdate` or `:PluginInstall!`
 
 ## Inserting new plugins
 
-In vimrc, insert plugin line like `Plugin github/route`
+In file `vimrc`, insert plugin line like `Plugin github/route`
 
 Inside VIM: 
 
-`:source %` and then `:PluginInstall`
+`:so ~/.vim/vimrc` and then `:PluginInstall`
 
 ## Plugins List
 
