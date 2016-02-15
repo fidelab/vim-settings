@@ -175,6 +175,8 @@ Plugin 'elzr/vim-json'
 Plugin 'xolox/vim-misc'
 " Extended session management for vim
 Plugin 'xolox/vim-session'
+" This plugin provides a start screen for Vim 
+"Plugin 'mhinz/vim-startify'
 
 call vundle#end()
 
@@ -346,4 +348,12 @@ command! JscsFix :call JscsFix()
 
 " ==== VIM AUTOFORMAT ====
 noremap <F5> :Autoformat<CR>
+"" ===== STARTIFY =====
+"" Fix open startify with NerdTree
+"autocmd VimEnter *
+  "\   if !argc()
+  "\ |   Startify
+  "\ |   NERDTree
+  "\ |   wincmd w
+  "\ | endif
 
