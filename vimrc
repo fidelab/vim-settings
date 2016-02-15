@@ -1,12 +1,12 @@
 " ===== gui =====
 if has("gui_running")
-   colors desert
-   "colorscheme wombat
-   "au GUIEnter * simalt ~x " fullscreen mode - Windows
-   au GUIEnter * winpos 0 0 
-   set lines=999 columns=999 " fullscreen mode - Linux
-   set guioptions-=T  "remove toolbar
-   set guioptions-=m  "remove menu bar
+  colors desert
+  "colorscheme wombat
+  "au GUIEnter * simalt ~x " fullscreen mode - Windows
+  au GUIEnter * winpos 0 0 
+  set lines=999 columns=999 " fullscreen mode - Linux
+  set guioptions-=T  "remove toolbar
+  set guioptions-=m  "remove menu bar
 endif
 
 " ===== editing =====
@@ -296,18 +296,18 @@ let jshint2_save = 0
 "noremap   <Right>  <NOP>
 
 if has("gui_running")
-   let g:airline_powerline_fonts = 1
-   if !exists('g:airline_symbols')
-      let g:airline_symbols = {}
-   endif
-   let g:airline_symbols.space = "\ua0"
-   " always show statusline
-   set laststatus=2
+  let g:airline_powerline_fonts = 1
+  if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+  let g:airline_symbols.space = "\ua0"
+  " always show statusline
+  set laststatus=2
 endif
 
 " Use local vimrc if available {
 if filereadable(expand("~/.vimrc.local"))
-    source ~/.vimrc.local
+  source ~/.vimrc.local
 endif
 " }
 
