@@ -219,7 +219,7 @@ map <F1> :NERDTreeTabsToggle<CR>
 " | dato1 | dato2 | dato3 |
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 nnoremap <Bar><Bar> :call <SID>align()<CR>
- 
+
 function! s:align()
   let p = '^\s*|\s.*\s|\s*$'
   if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
@@ -347,7 +347,12 @@ endfunction
 command! JscsFix :call JscsFix()
 
 " ==== VIM AUTOFORMAT ====
-noremap <F5> :Autoformat<CR>
+noremap <F5> :Autoformat <CR>
+
+"" ===== SESSIONS =====
+"map <F6> :mksession! ~/vim_session <CR>
+"map <F7> :source ~/vim_session <CR>
+
 "" ===== STARTIFY =====
 "" Fix open startify with NerdTree
 "autocmd VimEnter *
