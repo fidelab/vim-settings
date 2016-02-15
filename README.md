@@ -15,8 +15,8 @@
 #### CoffeeLint
 
 1. `npm install -g coffeelint`
-2. Ensure you have your coffeelint config file on `~/.vim/syntax/coffeelint.json` or change the variable 
-`g:syntastic_coffee_coffeelint_args` to your current path: 
+2. Ensure you have your coffeelint config file on `~/.vim/syntax/coffeelint.json` or change the variable
+`g:syntastic_coffee_coffeelint_args` to your current path:
 3. Restart vim or run `:so ~/.vim/vimrc`
 
 `let g:syntastic_coffee_coffeelint_args = "--csv --file ~/.vim/syntax/coffeelint.json"`
@@ -34,15 +34,15 @@
 2. Ensure you have the line `filetype plugin on` in your `.vimrc`
 3. Restart vim or run `:so ~/.vim/vimrc`
 
-#### youAutocompleteMe (not used by default) 
-_if you want to use it, uncomment line `Plugin 'Valloric/YouCompleteMe` on `vimrc` and comment line `Plugin 'ervandew/supertab'`_
+#### youAutocompleteMe (not used by default)
+_if you want to use it, uncomment line `Plugin 'Valloric/YouCompleteMe` on `.vimrc` and comment line `Plugin 'ervandew/supertab'`_
 
 **1.** Ensure that your version of Vim is at least 7.3.584 and that it has support for python2 scripting.
 
 **2.** `sudo apt-get install cmake` and `sudo apt-get install python-dev`
 
-**3.**    
-    
+**3.**
+
     > cd ~
     > mkdir ycm_build
     > cd ycm_build
@@ -59,18 +59,18 @@ Inside VIM:
 
 ## Inserting new plugins
 
-In file `vimrc`, insert plugin line like `Plugin github/route`
+In file `vundles.vim`, insert plugin line like `Plugin github/route`
 
-Inside VIM: 
+Inside VIM:
 
 `:so ~/.vim/vimrc` and then `:PluginInstall`
 
 ## Plugins List
 
-Check plugins section on `vimrc` file for an extended list and a little explanation for each one functionality.
+Check plugins section on `vundles.vim` file for an extended list and a little explanation for each one functionality.
 
 + [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim)
-+ [bling/vim-airline](https://github.com/bling/vim-airline) 
++ [bling/vim-airline](https://github.com/bling/vim-airline)
 + [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 + [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
 + [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
@@ -109,4 +109,12 @@ Check plugins section on `vimrc` file for an extended list and a little explanat
 + [plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown)
 + [nathanaelkane/vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 + [suan/vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
-+ ['Chiel92/vim-autoformat'](https://github.com/Chiel92/vim-autoformat')
++ [Chiel92/vim-autoformat](https://github.com/Chiel92/vim-autoformat)
++ [elzr/vim-json](https://github.com/elzr/vim-json)
++ [xolox/vim-misc](https://github.com/xolox/vim-misc)
++ [xolox/vim-session](https://github.com/xolox/vim-session)
++ [mattn/webapi-vim](https://github.com/mattn/webapi-vim)
++ [mattn/gist-vim](https://github.com/mattn/gist-vim)
++ [rking/ag.vim](https://github.com/rking/ag.vim)
++ [AndrewRadev/splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
+
