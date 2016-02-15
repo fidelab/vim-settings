@@ -12,6 +12,28 @@
 
 ## Dependencies
 
+#### CoffeeLint
+
+1. `npm install -g coffeelint`
+2. Ensure you have your coffeelint config file on `~/.vim/syntax/coffeelint.json` or change the variable 
+`g:syntastic_coffee_coffeelint_args` to your current path: 
+3. Restart vim or run `:so ~/.vim/vimrc`
+
+`let g:syntastic_coffee_coffeelint_args = "--csv --file ~/.vim/syntax/coffeelint.json"`
+
+#### JSCS
+
+1. `npm install jscs -g`
+2. Move the file `.jscsrc` from the `syntax` folder to your home folder.
+3. Change variable `g:syntastic_javascript_checkers = ['jshint']` to `let g:syntastic_javascript_checkers = ['jscs']` on your `vimrc` file.
+4. Restart vim or run `:so ~/.vim/vimrc`
+
+#### Instant Markdown
+
+1. `npm -g install instant-markdown-d`
+2. Ensure you have the line `filetype plugin on` in your `.vimrc`
+3. Restart vim or run `:so ~/.vim/vimrc`
+
 #### youAutocompleteMe (not used by default) 
 _if you want to use it, uncomment line `Plugin 'Valloric/YouCompleteMe` on `vimrc` and comment line `Plugin 'ervandew/supertab'`_
 
