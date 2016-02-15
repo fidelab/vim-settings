@@ -51,12 +51,6 @@ _if you want to use it, uncomment line `Plugin 'Valloric/YouCompleteMe` on `vimr
 
 **4.** All done!
 
-#### Instant Markdown
-
-1. `npm -g install instant-markdown-d`
-
-2. Ensure you have the line `filetype plugin on` in your `.vimrc`
-
 ## Updating plugins
 
 Inside VIM:
