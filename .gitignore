@@ -1,2 +1,8 @@
 .netrwhist
 bundle/*
+tags
+*~
+*.swp
+view
+sessions/
+backups/
