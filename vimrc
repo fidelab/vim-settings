@@ -169,6 +169,8 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'dbext.vim'
 "Format code with one button press! This plugin makes use of external formatprograms to achieve the best results"
 Plugin 'Chiel92/vim-autoformat'
+" Better json for vim
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 
