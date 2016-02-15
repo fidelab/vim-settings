@@ -171,6 +171,10 @@ Plugin 'dbext.vim'
 Plugin 'Chiel92/vim-autoformat'
 " Better json for vim
 Plugin 'elzr/vim-json'
+" Miscellaneous auto-load vim scripts
+Plugin 'xolox/vim-misc'
+" Extended session management for vim
+Plugin 'xolox/vim-session'
 
 call vundle#end()
 
