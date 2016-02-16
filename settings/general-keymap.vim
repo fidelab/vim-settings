@@ -63,3 +63,7 @@ map <F1> :NERDTreeTabsToggle<CR>
 " ==================== VIM ============================
 "(v)im (r)eload
 nmap <silent> ,vr :so ~/.vim/vimrc<CR>
+
+" ==================== Add carriage return after brackets ======
+imap <C-Return> <CR><CR><C-o>k<C-t>
+"inoremap {<CR> {<CR>}<C-o>O
