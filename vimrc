@@ -56,15 +56,13 @@ if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
 endif
 
 " ================ Indentation ======================
-
-set autoindent
 set smartindent
 set smarttab
+set expandtab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set mouse=a
-set expandtab
 set showmatch  " Show matching bracets when text indicator is over them
 
 filetype plugin on
